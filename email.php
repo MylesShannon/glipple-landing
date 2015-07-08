@@ -23,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST")
 		try {
 			//Connect to db and pass info
 			$DBH = new PDO("mysql:host=$host;dbname=$db", $username, $password);
+			$DBH->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 			$STH = $DBH->prepare("INSERT INTO emails (email, IP) VALUES (:email, :IP)");
 			$STH->bindParam(':email', json_decode($_GET["e"])->email);
