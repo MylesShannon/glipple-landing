@@ -17,8 +17,8 @@
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
 
-    <!-- Include AngularJS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+	<!-- Include AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
 
   </head>
 
@@ -36,11 +36,11 @@
           <a class="navbar-brand" href="#">Glipple</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
@@ -48,14 +48,13 @@
     <div class="container">
 
       <div class="starter-template">
-	<p ng-app>This is your first angular expression: {{ 1 + 2 }}</p>
         <h1>Glipple isn't ready yet!</h1>
-	<h3>Enter your email and we'll get back to you as soon as we're ready.</h3>
+		<h3>Enter your email and we'll get back to you as soon as we're ready.</h3>
         <!-- <input class="lead"></input> -->
-	<form action="email.php">
-  		<input type="text" name="e" placeholder="your email...">
-  		<input type="submit" value="Sign up">
-	</form>
+		<form action="email.php">
+			<input type="text" name="e" placeholder="your email...">
+			<input type="submit" value="Sign up">
+		</form>
       </div>
 
     </div><!-- /.container -->
