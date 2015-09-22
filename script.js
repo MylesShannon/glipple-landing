@@ -15,10 +15,12 @@ angular.module("mainModule", [])
         .success(function (data, status, headers, config)
         {
           $scope[resultVarName] = data;
+          $scope.data.email = null;
         })
         .error(function (data, status, headers, config)
         {
           $scope[resultVarName] = "SUBMIT ERROR";
+          $scope.data.email = null;
         });
     };
   });
